@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="javascriptreact">
+<head>
+    <meta charset="html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure</title>
+    <link rel="stylesheet" href="Adventure.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">ADVENTURE</div>
+        <div class="nav-links">
+            <li class="active"><a href="#"></a>Home</li>
+             <li><a href="#"></a>Tours</li>
+              <li><a href="#"></a>Explore</li>
+               <li><a href="#"></a>About</li>
+                <li class="ctn"><a href="#">Contact Us</a></li>
+        </div>
+        <img src="Menu.png"alt="" class="menu-btn">
+    </div>
+    <header>
+    <div class="header-content">
+        <h2>Explore the colorful  World</h2>
+        <div class="line"></div>
+        <h1>A Wonderful  Gift</h1>
+        <a href="#" class="ctn">Learn More</a>
+    </div>
+    </header>
+    <section class="events">
+    <div class="Title">
+          <h1>Upcoming Events</h1>
+          <div class="line"></div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <img src="bg1.jpg" alt="bg">
+            <h4>Everest Camp Trek</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Voluptatum accusamus sapiente architecto praesentium laboriosam iusto sunt eius quaerat possimus delectus maiores cum aliquam voluptates sequi eaque, nobis autem mollitia totam?</p>
+                 <a href="#" class="ctn" >learn More</a>
+        </div>
+        <div class="col">
+            <img src="bg2.jpg" alt="bg">
+            <h4>Walking Camp Trek</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Voluptatum accusamus sapiente architecto praesentium laboriosam iusto sunt eius quaerat possimus delectus maiores cum aliquam voluptates sequi eaque, nobis autem mollitia totam?</p>
+                 <a href="#" class="ctn" >learn More</a>
+        </div>
+    </div>
+    </section>
+    <script>
+        const menuBtn =document.querySelector('.menu-btn')
+        const navlinks=document.querySelector('.nav-links')
+        menuBtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+
+    </script>
+</body>
+</html>
